@@ -24,7 +24,6 @@
       --lavender: #8f84c8;
     }
 
-    /* Dark theme variables when body[data-theme="dark"] is set */
     body[data-theme="dark"] {
       --bg: #070b14;
       --panel: rgba(16,24,36,0.92);
@@ -111,7 +110,6 @@
       color: var(--text);
     }
 
-    /* Theme toggle button */
     .theme-toggle {
       display: inline-flex;
       align-items: center;
@@ -477,7 +475,7 @@
       <div style="display:flex;align-items:center;gap:10px;">
         <nav class="nav-links" aria-label="Main navigation">
           <a href="index.html">Home</a>
-          <a href="index.html">Tasks</a>
+          <a href="task.html">Tasks</a>
           <a href="journal.html" class="active">Journal</a>
         </nav>
 
@@ -657,7 +655,6 @@
       renderEntries();
     });
 
-    // Theme handling
     function applyTheme(theme) {
       document.body.setAttribute('data-theme', theme);
       const isDark = theme === 'dark';
@@ -683,7 +680,6 @@
       localStorage.setItem(THEME_KEY, next);
     });
 
-    // Initialize small bits
     todayDate.textContent = formatDate();
     renderEntries();
     initTheme();
