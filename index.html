@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Premium Landing Page</title>
+    <title>Tejmay Kisan | Personal Portfolio</title>
+    <meta name="description" content="Personal portfolio of Tejmay Kisan — designer and frontend developer building modern digital experiences." />
     <style>
         :root {
             --bg: #070b14;
@@ -35,11 +36,7 @@
 
         a { color: inherit; text-decoration: none; }
         img { max-width: 100%; display: block; }
-
-        .container {
-            width: min(1200px, calc(100% - 32px));
-            margin: 0 auto;
-        }
+        .container { width: min(1200px, calc(100% - 32px)); margin: 0 auto; }
 
         .site-header {
             position: sticky;
@@ -78,7 +75,7 @@
         .nav-links {
             display: flex;
             align-items: center;
-            gap: 28px;
+            gap: 24px;
             color: var(--muted);
             font-size: 0.96rem;
         }
@@ -171,7 +168,7 @@
         .lead {
             max-width: 620px;
             color: var(--muted);
-            font-size: 1.1rem;
+            font-size: 1.08rem;
             margin-bottom: 30px;
         }
 
@@ -183,8 +180,7 @@
             margin-bottom: 34px;
         }
 
-        .primary-btn,
-        .secondary-btn {
+        .primary-btn, .secondary-btn {
             display: inline-flex;
             align-items: center;
             justify-content: center;
@@ -193,6 +189,7 @@
             border-radius: 16px;
             font-weight: 700;
             transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+            cursor: pointer;
         }
 
         .primary-btn {
@@ -207,8 +204,7 @@
             background: rgba(15, 23, 42, 0.56);
         }
 
-        .primary-btn:hover,
-        .secondary-btn:hover {
+        .primary-btn:hover, .secondary-btn:hover {
             transform: translateY(-2px);
         }
 
@@ -368,9 +364,7 @@
             color: var(--text);
         }
 
-        section {
-            padding: 70px 0;
-        }
+        section { padding: 70px 0; }
 
         .section-head {
             text-align: center;
@@ -456,12 +450,12 @@
             border-radius: 24px;
             padding: 28px 22px;
             transition: transform 0.32s ease, border-color 0.32s ease, box-shadow 0.32s ease;
+            box-shadow: 0 18px 40px rgba(0,0,0,0.18);
         }
 
         .essential-card:hover {
             transform: translateY(-6px);
             border-color: rgba(125,211,252,0.35);
-            box-shadow: 0 22px 40px rgba(0,0,0,0.18);
         }
 
         .essential-card h3 {
@@ -633,16 +627,10 @@
         }
 
         @media (max-width: 960px) {
-            .hero-grid,
-            .promo-band,
-            .feature-grid,
-            .essentials-grid {
+            .hero-grid, .promo-band, .feature-grid, .essentials-grid {
                 grid-template-columns: 1fr;
             }
-
-            .nav-links {
-                display: none;
-            }
+            .nav-links { display: none; }
         }
 
         @media (max-width: 640px) {
@@ -650,12 +638,9 @@
                 flex-direction: column;
                 align-items: stretch;
             }
-
-            .primary-btn,
-            .secondary-btn {
+            .primary-btn, .secondary-btn {
                 width: 100%;
             }
-
             .mini-stats {
                 justify-content: space-between;
                 gap: 18px;
@@ -670,19 +655,19 @@
         <div class="container nav">
             <a href="#home" class="brand">
                 <span class="brand-mark"></span>
-                <span>Nova</span>
+                <span>Tejmay</span>
             </a>
 
             <nav class="nav-links" aria-label="Main navigation">
                 <a href="#home">Home</a>
-                <a href="#features">Features</a>
-                <a href="#essentials">Essentials</a>
                 <a href="#about">About</a>
-                <a href="#pricing">Pricing</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="essentials.html">Essentials</a>
                 <a href="#contact">Contact</a>
             </nav>
 
-            <a href="#contact" class="nav-cta">Book a Demo</a>
+            <a href="#contact" class="nav-cta">Let’s Talk</a>
         </div>
     </header>
 
@@ -691,31 +676,31 @@
             <div class="hero-shape"></div>
             <div class="container hero-grid">
                 <div class="reveal">
-                    <div class="eyebrow">New generation platform</div>
+                    <div class="eyebrow">Designer • Developer • Builder</div>
                     <h1>
-                        We build <span class="gradient-text">premium digital experiences</span> that convert.
+                        I create <span class="gradient-text">modern digital experiences</span> that feel personal and perform beautifully.
                     </h1>
                     <p class="lead">
-                        Launch faster, look sharper, and turn attention into momentum with a strategy-first platform built for ambitious brands.
+                        I’m Tejmay Kisan, a developer and digital creator focused on building clear, premium, user-first experiences for people and brands.
                     </p>
 
                     <div class="cta-row">
-                        <a href="#contact" class="primary-btn">Get Started</a>
-                        <a href="#features" class="secondary-btn">Explore Features</a>
+                        <a href="#projects" class="primary-btn">View Projects</a>
+                        <a href="#contact" class="secondary-btn">Contact Me</a>
                     </div>
 
                     <div class="mini-stats">
                         <div>
-                            <strong>12k+</strong>
-                            Active users
+                            <strong>3+</strong>
+                            Years building
                         </div>
                         <div>
-                            <strong>4.9/5</strong>
-                            Average rating
+                            <strong>10+</strong>
+                            Projects shipped
                         </div>
                         <div>
-                            <strong>3x</strong>
-                            Faster launches
+                            <strong>100%</strong>
+                            Personal focus
                         </div>
                     </div>
                 </div>
@@ -724,144 +709,138 @@
                     <div class="glass-card dashboard">
                         <div class="dash-top">
                             <div class="dots"><span></span><span></span><span></span></div>
-                            <div class="chip">Growth overview</div>
+                            <div class="chip">Portfolio snapshot</div>
                         </div>
 
                         <div class="chart">
                             <div class="chart-top">
-                                <span>Revenue</span>
-                                <strong>$84.2k</strong>
+                                <span>Creative output</span>
+                                <strong>92%</strong>
                             </div>
-                            <div class="bars" aria-label="Revenue chart">
+                            <div class="bars" aria-label="Creative progress chart">
                                 <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
                             </div>
                         </div>
 
                         <div class="metric-row">
                             <div class="metric-box">
-                                <h4>Conversion</h4>
-                                <strong>8.4%</strong>
+                                <h4>Design</h4>
+                                <strong>UI/UX</strong>
                             </div>
                             <div class="metric-box">
-                                <h4>Engagement</h4>
-                                <strong>92%</strong>
+                                <h4>Build</h4>
+                                <strong>Frontend</strong>
                             </div>
                             <div class="metric-box">
-                                <h4>Retention</h4>
-                                <strong>81%</strong>
+                                <h4>Focus</h4>
+                                <strong>Clarity</strong>
                             </div>
                             <div class="metric-box">
-                                <h4>ROI</h4>
-                                <strong>3.6x</strong>
+                                <h4>Style</h4>
+                                <strong>Minimal</strong>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="features">
-            <div class="container">
-                <div class="section-head reveal">
-                    <div class="tag">Why teams choose us</div>
-                    <h2>Everything your launch needs</h2>
-                    <p>Modern tools, sharp design, and clear execution designed to turn your ideas into market-ready momentum.</p>
-                </div>
-
-                <div class="feature-grid reveal">
-                    <article class="feature-card">
-                        <div class="feature-icon">⚡</div>
-                        <h3>Lightning Execution</h3>
-                        <p>Launch campaigns, pages, and assets at speed without losing clarity or premium quality.</p>
-                    </article>
-
-                    <article class="feature-card">
-                        <div class="feature-icon">🎨</div>
-                        <h3>Brand-First Design</h3>
-                        <p>Styled to feel elevated, distinctive, and conversion driven without sacrificing usability.</p>
-                    </article>
-
-                    <article class="feature-card">
-                        <div class="feature-icon">📈</div>
-                        <h3>Growth Analytics</h3>
-                        <p>Track performance with actionable insights that help refine messaging and scale results.</p>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section id="essentials" class="essentials-section">
-            <div class="container">
-                <div class="section-head reveal">
-                    <div class="tag">Essentials</div>
-                    <h2>Everything needed to launch fast</h2>
-                    <p>These key essentials help teams move from concept to conversion with clarity, speed, and a premium digital presence.</p>
-                </div>
-
-                <div class="essentials-grid reveal">
-                    <article class="essential-card">
-                        <div class="feature-icon">🧩</div>
-                        <h3>Brand Essentials</h3>
-                        <p>Positioning, tone, and visual identity that make your business stand out immediately.</p>
-                        <a href="essentials.html" class="link-btn">View essentials</a>
-                    </article>
-
-                    <article class="essential-card">
-                        <div class="feature-icon">🚀</div>
-                        <h3>Launch Essentials</h3>
-                        <p>Page structure, messaging flow, and conversion blocks built for a smooth first impression.</p>
-                        <a href="essentials.html" class="link-btn">View essentials</a>
-                    </article>
-
-                    <article class="essential-card">
-                        <div class="feature-icon">📊</div>
-                        <h3>Growth Essentials</h3>
-                        <p>Analytics, testing insights, and optimization basics that keep momentum strong over time.</p>
-                        <a href="essentials.html" class="link-btn">View essentials</a>
-                    </article>
                 </div>
             </div>
         </section>
 
         <section id="about">
             <div class="container">
+                <div class="section-head reveal">
+                    <div class="tag">About</div>
+                    <h2>Creative, intentional, and user-focused.</h2>
+                    <p>I enjoy turning ideas into useful, visually polished digital products — from landing pages to branded experiences that feel smooth and trustworthy.</p>
+                </div>
+
                 <div class="promo-band reveal">
                     <div class="promo-copy">
-                        <div class="tag">Built for momentum</div>
-                        <h3>Crafted to impress, engineered to perform.</h3>
-                        <p>We blend premium design with real business logic so your website looks remarkable and works harder for your growth goals.</p>
+                        <div class="tag">My approach</div>
+                        <h3>Simple ideas, polished execution.</h3>
+                        <p>I work at the intersection of design, strategy, and front-end implementation. My goal is always the same: make the experience feel effortless while helping people take the next step.</p>
 
                         <ul class="check-list">
-                            <li>Custom-designed experiences for modern brands</li>
-                            <li>Responsive, fast, and conversion-focused pages</li>
-                            <li>Scalable systems that grow with your goals</li>
+                            <li>Thoughtful design choices</li>
+                            <li>Clear user journeys</li>
+                            <li>Fast and responsive experiences</li>
                         </ul>
                     </div>
 
                     <div class="showcase">
                         <div class="show-box">
-                            <strong>Strategy + UI</strong>
-                            <span>Clear positioning, content structure, and premium design direction.</span>
+                            <strong>Strategy</strong>
+                            <span>Building the right message before the design takes shape.</span>
                         </div>
                         <div class="show-box">
-                            <strong>Performance</strong>
-                            <span>Optimized for speed, smooth interactions, and mobile-first delivery.</span>
+                            <strong>Design</strong>
+                            <span>Beautiful interfaces with a strong focus on readability and flow.</span>
                         </div>
                         <div class="show-box">
-                            <strong>Conversion</strong>
-                            <span>Intent-driven layouts that reduce friction and improve action rates.</span>
+                            <strong>Development</strong>
+                            <span>Responsive pages and clean front-end implementation.</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="pricing">
+        <section id="skills">
             <div class="container">
                 <div class="section-head reveal">
-                    <div class="tag">Simple pricing</div>
-                    <h2>Flexible for every stage</h2>
-                    <p>Choose the plan that matches your growth path, whether you're validating a new concept or scaling an established brand.</p>
+                    <div class="tag">Skills</div>
+                    <h2>What I work with</h2>
+                    <p>I focus on the tools and processes that help me create reliable, modern, and polished digital experiences.</p>
+                </div>
+
+                <div class="feature-grid reveal">
+                    <article class="feature-card">
+                        <div class="feature-icon">🎨</div>
+                        <h3>UI Design</h3>
+                        <p>Designing clean layouts, polished styling, and intuitive visual hierarchy for modern interfaces.</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-icon">💻</div>
+                        <h3>Frontend Development</h3>
+                        <p>Building responsive websites with HTML, CSS, and JavaScript that work smoothly across devices.</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-icon">⚙️</div>
+                        <h3>Product Thinking</h3>
+                        <p>Turning ideas into user-friendly digital products with strong structure, purpose, and clarity.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="essentials-section">
+            <div class="container">
+                <div class="section-head reveal">
+                    <div class="tag">Projects</div>
+                    <h2>Recent work and ideas</h2>
+                    <p>A few examples of work shaped around clean thinking, visual clarity, and real-world usability.</p>
+                </div>
+
+                <div class="essentials-grid reveal">
+                    <article class="essential-card">
+                        <div class="feature-icon">🧩</div>
+                        <h3>Landing Pages</h3>
+                        <p>Conversion-focused websites designed to communicate value quickly and confidently.</p>
+                        <a href="essentials.html" class="link-btn">See essentials</a>
+                    </article>
+
+                    <article class="essential-card">
+                        <div class="feature-icon">📱</div>
+                        <h3>Responsive Builds</h3>
+                        <p>Mobile-friendly interfaces that feel polished and consistent across all screen sizes.</p>
+                        <a href="essentials.html" class="link-btn">See essentials</a>
+                    </article>
+
+                    <article class="essential-card">
+                        <div class="feature-icon">🚀</div>
+                        <h3>Creative Experiments</h3>
+                        <p>Visual explorations and front-end experiments focused on interaction, flow, and beauty.</p>
+                        <a href="essentials.html" class="link-btn">See essentials</a>
+                    </article>
                 </div>
             </div>
         </section>
@@ -869,11 +848,11 @@
         <section class="cta-banner" id="contact">
             <div class="container">
                 <div class="cta-card reveal">
-                    <div class="tag">Ready to launch?</div>
-                    <h2>Turn your ideas into a premium online presence.</h2>
-                    <p>Let’s define a clean strategy, craft a memorable experience, and build something that feels premium from day one.</p>
+                    <div class="tag">Let’s connect</div>
+                    <h2>Need a website, landing page, or digital idea built?</h2>
+                    <p>I’m available for creative builds, portfolio projects, product mockups, and frontend-focused work that needs clarity and polish.</p>
                     <div class="cta-row" style="justify-content:center; margin-bottom:0;">
-                        <a href="mailto:hello@nova.example" class="primary-btn">Start Your Project</a>
+                        <a href="mailto:tejmay@example.com" class="primary-btn">Email Me</a>
                     </div>
                 </div>
             </div>
@@ -884,9 +863,9 @@
         <div class="container footer-inner">
             <div class="brand">
                 <span class="brand-mark"></span>
-                <span>Nova</span>
+                <span>Tejmay</span>
             </div>
-            <span>© 2026 Nova Studio. Crafted for growth.</span>
+            <span>© 2026 Tejmay Kisan. Built with intention.</span>
         </div>
     </footer>
 
@@ -903,26 +882,21 @@
 
         revealItems.forEach(item => observer.observe(item));
 
-        function triggerSweep(targetSelector) {
-            const target = document.querySelector(targetSelector);
-            if (!target) return;
-
-            document.body.classList.add('transitioning');
-            setTimeout(() => {
-                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            }, 260);
-
-            setTimeout(() => {
-                document.body.classList.remove('transitioning');
-            }, 900);
-        }
-
         document.querySelectorAll('a[href^="#"]').forEach(link => {
             link.addEventListener('click', function (e) {
                 const href = this.getAttribute('href');
                 if (!href || href === '#') return;
                 e.preventDefault();
-                triggerSweep(href);
+                const target = document.querySelector(href);
+                if (target) {
+                    document.body.classList.add('transitioning');
+                    setTimeout(() => {
+                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }, 260);
+                    setTimeout(() => {
+                        document.body.classList.remove('transitioning');
+                    }, 900);
+                }
             });
         });
     </script>
