@@ -440,6 +440,53 @@
             color: var(--muted);
         }
 
+        .essentials-section {
+            padding-top: 20px;
+        }
+
+        .essentials-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 22px;
+        }
+
+        .essential-card {
+            background: linear-gradient(180deg, rgba(12, 19, 29, 0.94), rgba(8, 13, 20, 0.88));
+            border: 1px solid var(--line);
+            border-radius: 24px;
+            padding: 28px 22px;
+            transition: transform 0.32s ease, border-color 0.32s ease, box-shadow 0.32s ease;
+        }
+
+        .essential-card:hover {
+            transform: translateY(-6px);
+            border-color: rgba(125,211,252,0.35);
+            box-shadow: 0 22px 40px rgba(0,0,0,0.18);
+        }
+
+        .essential-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+        }
+
+        .essential-card p {
+            color: var(--muted);
+            margin-bottom: 18px;
+        }
+
+        .essential-card .link-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 42px;
+            padding: 0 18px;
+            border-radius: 12px;
+            background: rgba(125,211,252,0.1);
+            border: 1px solid rgba(125,211,252,0.2);
+            color: var(--primary);
+            font-weight: 700;
+        }
+
         .promo-band {
             display: grid;
             grid-template-columns: 1.1fr 0.9fr;
@@ -588,7 +635,8 @@
         @media (max-width: 960px) {
             .hero-grid,
             .promo-band,
-            .feature-grid {
+            .feature-grid,
+            .essentials-grid {
                 grid-template-columns: 1fr;
             }
 
@@ -628,6 +676,7 @@
             <nav class="nav-links" aria-label="Main navigation">
                 <a href="#home">Home</a>
                 <a href="#features">Features</a>
+                <a href="#essentials">Essentials</a>
                 <a href="#about">About</a>
                 <a href="#pricing">Pricing</a>
                 <a href="#contact">Contact</a>
@@ -736,6 +785,39 @@
                         <div class="feature-icon">📈</div>
                         <h3>Growth Analytics</h3>
                         <p>Track performance with actionable insights that help refine messaging and scale results.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="essentials" class="essentials-section">
+            <div class="container">
+                <div class="section-head reveal">
+                    <div class="tag">Essentials</div>
+                    <h2>Everything needed to launch fast</h2>
+                    <p>These key essentials help teams move from concept to conversion with clarity, speed, and a premium digital presence.</p>
+                </div>
+
+                <div class="essentials-grid reveal">
+                    <article class="essential-card">
+                        <div class="feature-icon">🧩</div>
+                        <h3>Brand Essentials</h3>
+                        <p>Positioning, tone, and visual identity that make your business stand out immediately.</p>
+                        <a href="essentials.html" class="link-btn">View essentials</a>
+                    </article>
+
+                    <article class="essential-card">
+                        <div class="feature-icon">🚀</div>
+                        <h3>Launch Essentials</h3>
+                        <p>Page structure, messaging flow, and conversion blocks built for a smooth first impression.</p>
+                        <a href="essentials.html" class="link-btn">View essentials</a>
+                    </article>
+
+                    <article class="essential-card">
+                        <div class="feature-icon">📊</div>
+                        <h3>Growth Essentials</h3>
+                        <p>Analytics, testing insights, and optimization basics that keep momentum strong over time.</p>
+                        <a href="essentials.html" class="link-btn">View essentials</a>
                     </article>
                 </div>
             </div>
